@@ -20,6 +20,11 @@
 		227A4F2825409C0F00EF5273 /* CardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227A4F2625409C0F00EF5273 /* CardsTableViewCell.xib */; };
 		228125B325420B38006ED704 /* SingleCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228125B225420B38006ED704 /* SingleCardViewController.swift */; };
 		228125B8254218CF006ED704 /* APIManagerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228125B7254218CF006ED704 /* APIManagerTwo.swift */; };
+		2291D8F425433F1500487345 /* InfoAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291D8F325433F1500487345 /* InfoAllViewController.swift */; };
+		2291D8F825433F5A00487345 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291D8F625433F5A00487345 /* InfoTableViewCell.swift */; };
+		2291D8F925433F5A00487345 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2291D8F725433F5A00487345 /* InfoTableViewCell.xib */; };
+		2291D8FC2543434700487345 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291D8FB2543434700487345 /* Info.swift */; };
+		2291D8FF2543445D00487345 /* APIManagerAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291D8FE2543445D00487345 /* APIManagerAll.swift */; };
 		24784C3CDBF28655F5B240B9 /* Pods_Hearthstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B42B684FDE75DFA4A0EB38 /* Pods_Hearthstone.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,11 @@
 		227A4F2625409C0F00EF5273 /* CardsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsTableViewCell.xib; sourceTree = "<group>"; };
 		228125B225420B38006ED704 /* SingleCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardViewController.swift; sourceTree = "<group>"; };
 		228125B7254218CF006ED704 /* APIManagerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTwo.swift; sourceTree = "<group>"; };
+		2291D8F325433F1500487345 /* InfoAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAllViewController.swift; sourceTree = "<group>"; };
+		2291D8F625433F5A00487345 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		2291D8F725433F5A00487345 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		2291D8FB2543434700487345 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		2291D8FE2543445D00487345 /* APIManagerAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerAll.swift; sourceTree = "<group>"; };
 		94B42B684FDE75DFA4A0EB38 /* Pods_Hearthstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hearthstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A302892D3770000261806A76 /* Pods-Hearthstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hearthstone.release.xcconfig"; path = "Target Support Files/Pods-Hearthstone/Pods-Hearthstone.release.xcconfig"; sourceTree = "<group>"; };
 		CD3C1545F002FD7B2E008432 /* Pods-Hearthstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hearthstone.debug.xcconfig"; path = "Target Support Files/Pods-Hearthstone/Pods-Hearthstone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +99,7 @@
 				227A4F0C2540947300EF5273 /* Info.plist */,
 				227A4F142540974900EF5273 /* Constants.swift */,
 				228125B225420B38006ED704 /* SingleCardViewController.swift */,
+				2291D8F325433F1500487345 /* InfoAllViewController.swift */,
 			);
 			path = Hearthstone;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 			children = (
 				227A4F19254097B500EF5273 /* APIManager.swift */,
 				228125B7254218CF006ED704 /* APIManagerTwo.swift */,
+				2291D8FE2543445D00487345 /* APIManagerAll.swift */,
 			);
 			path = "API Manager";
 			sourceTree = "<group>";
@@ -106,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				227A4F21254099DE00EF5273 /* Card.swift */,
+				2291D8FB2543434700487345 /* Info.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +128,8 @@
 			children = (
 				227A4F2525409C0F00EF5273 /* CardsTableViewCell.swift */,
 				227A4F2625409C0F00EF5273 /* CardsTableViewCell.xib */,
+				2291D8F625433F5A00487345 /* InfoTableViewCell.swift */,
+				2291D8F725433F5A00487345 /* InfoTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -195,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2291D8F925433F5A00487345 /* InfoTableViewCell.xib in Resources */,
 				227A4F0B2540947300EF5273 /* LaunchScreen.storyboard in Resources */,
 				227A4F082540947300EF5273 /* Assets.xcassets in Resources */,
 				227A4F062540947200EF5273 /* Main.storyboard in Resources */,
@@ -255,11 +271,15 @@
 				227A4F22254099DE00EF5273 /* Card.swift in Sources */,
 				227A4EFF2540947200EF5273 /* AppDelegate.swift in Sources */,
 				228125B8254218CF006ED704 /* APIManagerTwo.swift in Sources */,
+				2291D8F425433F1500487345 /* InfoAllViewController.swift in Sources */,
 				227A4F1A254097B500EF5273 /* APIManager.swift in Sources */,
 				227A4F2725409C0F00EF5273 /* CardsTableViewCell.swift in Sources */,
 				227A4F012540947200EF5273 /* SceneDelegate.swift in Sources */,
+				2291D8F825433F5A00487345 /* InfoTableViewCell.swift in Sources */,
+				2291D8FC2543434700487345 /* Info.swift in Sources */,
 				228125B325420B38006ED704 /* SingleCardViewController.swift in Sources */,
 				227A4F152540974900EF5273 /* Constants.swift in Sources */,
+				2291D8FF2543445D00487345 /* APIManagerAll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

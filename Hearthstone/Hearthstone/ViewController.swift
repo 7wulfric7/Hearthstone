@@ -53,7 +53,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "singleCardSeque", sender: nil)
         let displayedCard = cards[indexPath.row]
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "SingleCardViewController") as! SingleCardViewController

@@ -35,13 +35,8 @@ class CardsTableViewCell: UITableViewCell {
         self.lblCardSet.text = cards.cardSet
         self.lblType.text = cards.type
         self.lblPlayerClass.text = cards.playerClass
-        
-        
-//        APIManager.shared.getInfoFromApi { (card, error) in
-////            if let avatarName =  {
-//            let avatar = IMG_BASE_URL + "\(String(describing: cards.img))" + ".png"
-//                self.avatar.kf.setImage(with: URL(string: avatar))
-
-//        }
+        if let avatarName = cards.img {
+            self.avatar.kf.setImage(with: URL(string: avatarName))
+        }
     }
 }

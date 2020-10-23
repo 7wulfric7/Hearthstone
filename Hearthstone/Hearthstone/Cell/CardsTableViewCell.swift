@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CardsTableViewCell: UITableViewCell {
 
@@ -14,6 +15,7 @@ class CardsTableViewCell: UITableViewCell {
     @IBOutlet weak var lblCardSet: UILabel!
     @IBOutlet weak var lblType: UILabel!
     @IBOutlet weak var lblPlayerClass: UILabel!
+    @IBOutlet weak var avatar: UIImageView!
     
     
     override func awakeFromNib() {
@@ -33,5 +35,13 @@ class CardsTableViewCell: UITableViewCell {
         self.lblCardSet.text = cards.cardSet
         self.lblType.text = cards.type
         self.lblPlayerClass.text = cards.playerClass
+        
+        
+//        APIManager.shared.getInfoFromApi { (card, error) in
+////            if let avatarName =  {
+//            let avatar = IMG_BASE_URL + "\(String(describing: cards.img))" + ".png"
+//                self.avatar.kf.setImage(with: URL(string: avatar))
+
+//        }
     }
 }

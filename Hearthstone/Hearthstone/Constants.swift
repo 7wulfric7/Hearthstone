@@ -7,3 +7,4 @@
 
 let BASE_URL = "https://rapidapi.p.rapidapi.com/cards/"
 
+let IMG_BASE_URL = "https://media.services.zam.com/v1/media/byName/hs/cards/enus/"

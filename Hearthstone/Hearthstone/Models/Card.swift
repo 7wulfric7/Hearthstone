@@ -15,9 +15,11 @@ struct Cards: Decodable {
     var type: String? = ""
     var playerClass: String? = ""
     var img: String? = ""
+    var text: String? = ""
+    var locale: String? = ""
 }
 
 struct CardSet: Decodable {
-    var Basic: [Cards]
+    var Classic: [Cards]
     
 }

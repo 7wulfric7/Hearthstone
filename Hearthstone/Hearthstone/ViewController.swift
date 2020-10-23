@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
     
@@ -13,10 +14,12 @@ class ViewController: UIViewController {
     
     var cards = [Cards]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTable()
-
+       
+        
         APIManager.shared.getInfoFromApi { (cards, error) in
             if let cards = cards {
                 self.cards = cards
@@ -49,7 +52,16 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.getInfoForCrads(cards: card)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: "singleCardSeque", sender: nil)
+        let displayedCard = cards[indexPath.row]
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "SingleCardViewController") as! SingleCardViewController
+                controller.card = displayedCard
+                present(controller, animated: true, completion: nil)
+    }
 }
+
 
 
 

@@ -8,18 +8,42 @@
 import UIKit
 
 struct Sets: Decodable {
-    var classes: Array<String>
-    var sets: Array<String>
-    var standard: Array<String>
-    var wild: Array<String>
-    var types: Array<String>
-    var factions: Array<String>
-    var qualities: Array<String>
-    var races: Array<String>
-    var locales: Array<String>
+    var classes: Array<String> = []
+    var sets: Array<String> = []
+    var standard: Array<String> = []
+    var wild: Array<String> = []
+    var types: Array<String> = []
+    var factions: Array<String> = []
+    var qualities: Array<String> = []
+    var races: Array<String> = []
+    var locales: Array<String> = []
     
+    func getArrayForKey(key: String) -> [String] {
+        switch key {
+        case "classes":
+            return classes
+        case "sets":
+            return sets
+        case "standard":
+        return standard
+        case "wild":
+            return wild
+        case "types":
+            return types
+        case "factions":
+            return factions
+        case "qualities":
+            return qualities
+        case "races":
+            return races
+        case "locales":
+            return locales
+        default:
+           return []
+        }
+    }
 }
 
-struct Info: Decodable {
-    var sets = [""]
-}
+//struct Info: Decodable {
+//    var sets = [""]
+//}

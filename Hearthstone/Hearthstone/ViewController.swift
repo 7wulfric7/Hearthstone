@@ -11,28 +11,36 @@ import Kingfisher
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var lblText: UILabel!
     
     var cards = [Cards]()
-    
+    var name = ""
+    var type = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTable()
        
         
-        APIManager.shared.getInfoFromApi { (cards, error) in
+        APIManager.shared.getCardList(name: name, type: type) { (cards, error) in
             if let cards = cards {
                 self.cards = cards
+               
                 self.tableView.reloadData()
+                if cards.count == 0 {
+                    self.tableView.isHidden = true
+                    self.lblText.isHidden = false
+                }
             }
-                print("vrakja nesto")
-            }
+        }
+            
         }
         
     func setupTable() {
         tableView.register(UINib(nibName: "CardsTableViewCell", bundle: nil), forCellReuseIdentifier: "cardsCell")
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.tableFooterView = UIView()
     }
   
 }
@@ -57,7 +65,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "SingleCardViewController") as! SingleCardViewController
                 controller.card = displayedCard
-                present(controller, animated: true, completion: nil)
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
 

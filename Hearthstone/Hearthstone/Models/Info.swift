@@ -7,14 +7,19 @@
 
 import UIKit
 
+struct Sets: Decodable {
+    var classes: Array<String>
+    var sets: Array<String>
+    var standard: Array<String>
+    var wild: Array<String>
+    var types: Array<String>
+    var factions: Array<String>
+    var qualities: Array<String>
+    var races: Array<String>
+    var locales: Array<String>
+    
+}
+
 struct Info: Decodable {
-    var classes: String?
-    var sets: String?
-    var standard: String?
-    var wild: String?
-    var factions: String?
-    var qualities: String?
-    var races: String?
-    var locales: String?
-    var type: String?
+    var sets = [""]
 }

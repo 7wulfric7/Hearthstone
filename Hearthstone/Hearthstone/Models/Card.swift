@@ -9,14 +9,14 @@ import UIKit
 
 struct Cards: Decodable {
     
-    var cardId: String? = ""
-    var name: String? = ""
-    var cardSet: String? = ""
-    var type: String? = ""
-    var playerClass: String? = ""
-    var img: String? = ""
-    var text: String? = ""
-    var locale: String? = ""
+    var cardId: String?
+    var name: String?
+    var cardSet: String?
+    var type: String?
+    var playerClass: String?
+    var img: String?
+    var text: String?
+    var locale: String?
 }
 
 struct CardSet: Decodable {

@@ -40,7 +40,7 @@ class APIManager {
                 return
             }
             if let cards = response.value {
-                completion([], nil)
+                completion(cards, nil)
             }
         }
     }

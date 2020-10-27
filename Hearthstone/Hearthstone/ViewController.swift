@@ -20,12 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTable()
-       
+        
         
         APIManager.shared.getCardList(name: name, type: type) { (cards, error) in
             if let cards = cards {
                 self.cards = cards
-               
                 self.tableView.reloadData()
                 if cards.count == 0 {
                     self.tableView.isHidden = true

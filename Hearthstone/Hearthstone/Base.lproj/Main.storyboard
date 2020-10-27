@@ -120,14 +120,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-di-3YT">
-                                <rect key="frame" x="20" y="540" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-3U-RDz">
+                                <rect key="frame" x="20" y="591" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-3U-RDz">
-                                <rect key="frame" x="20" y="591" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-di-3YT">
+                                <rect key="frame" x="20" y="540" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,33 +138,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Alm-Vh-494">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53e-D4-CJZ" userLabel="Holder View">
                                 <rect key="frame" x="20" y="10" width="374" height="500"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Alm-Vh-494">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxm-HN-VUa">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="WCd-rF-1SD"/>
+                                    <constraint firstItem="Hxm-HN-VUa" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="top" id="1ga-Mk-zov"/>
+                                    <constraint firstItem="Hxm-HN-VUa" firstAttribute="leading" secondItem="53e-D4-CJZ" secondAttribute="leading" id="2Td-Rz-3BZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Alm-Vh-494" secondAttribute="trailing" id="36a-aF-N4Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hxm-HN-VUa" secondAttribute="bottom" id="Q1w-yd-oxQ"/>
+                                    <constraint firstAttribute="height" constant="500" id="ZbT-IU-Vws"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hxm-HN-VUa" secondAttribute="trailing" id="bKc-Z9-iJs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Alm-Vh-494" secondAttribute="bottom" id="iR3-vi-6lI"/>
+                                    <constraint firstItem="Alm-Vh-494" firstAttribute="leading" secondItem="53e-D4-CJZ" secondAttribute="leading" id="ire-wJ-GWb"/>
+                                    <constraint firstItem="Alm-Vh-494" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="top" id="q6a-Go-csV"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v3G-dK-bAi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mLs-8Q-VcI" firstAttribute="top" secondItem="ETg-3U-RDz" secondAttribute="bottom" constant="30" id="Aw7-7D-E1E"/>
-                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="Alm-Vh-494" secondAttribute="trailing" constant="20" id="BJD-3p-7Jf"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="53e-D4-CJZ" secondAttribute="trailing" constant="20" id="IF8-NA-xbu"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="ETg-3U-RDz" secondAttribute="trailing" constant="20" id="L5d-rL-Svb"/>
-                            <constraint firstItem="Alm-Vh-494" firstAttribute="top" secondItem="v3G-dK-bAi" secondAttribute="top" constant="10" id="Sx3-Vb-9ut"/>
+                            <constraint firstItem="53e-D4-CJZ" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="OI0-ub-xJv"/>
+                            <constraint firstItem="Vtv-di-3YT" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="bottom" constant="30" id="X1P-Pz-nfw"/>
                             <constraint firstItem="ETg-3U-RDz" firstAttribute="top" secondItem="Vtv-di-3YT" secondAttribute="bottom" constant="30" id="fNC-u3-Knm"/>
-                            <constraint firstItem="Alm-Vh-494" firstAttribute="centerX" secondItem="Pyt-Yj-d20" secondAttribute="centerX" id="gfH-3u-fwq"/>
                             <constraint firstItem="ETg-3U-RDz" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="iPP-xd-ub7"/>
+                            <constraint firstItem="53e-D4-CJZ" firstAttribute="top" secondItem="v3G-dK-bAi" secondAttribute="top" constant="10" id="lnm-NC-P2o"/>
                             <constraint firstItem="Vtv-di-3YT" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="mHb-HK-hgh"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="Vtv-di-3YT" secondAttribute="trailing" constant="20" id="p1Z-Bv-oJm"/>
-                            <constraint firstItem="Alm-Vh-494" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="p2p-eq-EaZ"/>
-                            <constraint firstItem="Vtv-di-3YT" firstAttribute="top" secondItem="Alm-Vh-494" secondAttribute="bottom" constant="30" id="u7L-fh-J5v"/>
                             <constraint firstItem="mLs-8Q-VcI" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="wCf-hi-2LU"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="mLs-8Q-VcI" secondAttribute="trailing" constant="20" id="wzo-1b-dJI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pqo-rv-qv8"/>
                     <connections>
+                        <outlet property="gif" destination="Hxm-HN-VUa" id="kKq-zy-ytf"/>
+                        <outlet property="holderView" destination="53e-D4-CJZ" id="pw9-ou-OHR"/>
                         <outlet property="image" destination="Alm-Vh-494" id="Jl9-Na-NXR"/>
                         <outlet property="lblCardSet" destination="Vtv-di-3YT" id="H1r-9p-fo7"/>
                         <outlet property="lblLocale" destination="mLs-8Q-VcI" id="nrf-OT-4KS"/>

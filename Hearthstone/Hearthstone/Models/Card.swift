@@ -17,6 +17,7 @@ struct Cards: Decodable {
     var img: String?
     var text: String?
     var locale: String?
+    var imgGold: String?
 }
 
 struct CardSet: Decodable {

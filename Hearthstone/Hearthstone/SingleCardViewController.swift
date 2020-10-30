@@ -23,7 +23,7 @@ class SingleCardViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Info for Card"
         APIManagerTwo.shared.getInfoForCard(id: card.cardId!) { (card, error) in
         
             if let card = card {
@@ -63,10 +63,10 @@ class SingleCardViewController: UIViewController {
     }
     @objc func flip() {
         let transitionOptions: UIView.AnimationOptions = [.transitionFlipFromRight, .showHideTransitionViews]
-        UIView.transition(with: image, duration: 1.0, options: transitionOptions, animations: {
+        UIView.transition(with: holderView, duration: 1.0, options: transitionOptions, animations: {
                 self.image.isHidden = true
             })
-        UIView.transition(with: gif, duration: 1.0, options: transitionOptions, animations: {
+        UIView.transition(with: holderView, duration: 1.0, options: transitionOptions, animations: {
                 self.gif.isHidden = false
             })
     }

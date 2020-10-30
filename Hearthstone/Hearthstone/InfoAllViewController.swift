@@ -12,13 +12,15 @@ class InfoAllViewController: UIViewController {
 
     @IBOutlet weak var infoAllTableView: UITableView!
     
+    
 //    var info: Sets?
 var types = [String]()
     var sets = Sets()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "Cards Types"
         setupTable()
         APIManagerAll.shared.getInfoForAll { (json, error) in
             if let json = json {
@@ -43,7 +45,7 @@ var types = [String]()
 //                        }
     
     }
-    
+  
     func parseData(json: [String: Any]) {
         types.append(contentsOf: json.keys)
         types.removeAll(where: {$0 == "patch"})
@@ -94,7 +96,7 @@ extension InfoAllViewController: UITableViewDataSource, UITableViewDelegate {
         controller.names = dataArray
         controller.type = type
 
-        if type == "wild" {
+        if type == "wild" || type == "standard" {
             controller.type = "sets"
         }
         navigationController?.pushViewController(controller, animated: true)

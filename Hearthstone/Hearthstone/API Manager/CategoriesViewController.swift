@@ -17,7 +17,7 @@ class CategoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 setupTable()
-        // Do any additional setup after loading the view.
+        title = self.type
     }
     
 
@@ -49,6 +49,8 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
 //        let set = info?.classes[indexPath.row]
         let type = names[indexPath.row]
         cell.lblClasses.text = type
+
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

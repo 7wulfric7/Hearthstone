@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xV2-MC-fsd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KrO-z7-Yfn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="C5g-9F-dHp" customClass="InfoAllViewController" customModule="Hearthstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CUW-6p-tO0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3w4-3l-jb3">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -46,11 +46,11 @@
             <objects>
                 <viewController storyboardIdentifier="CategoriesViewController" id="9VD-oJ-E8o" customClass="CategoriesViewController" customModule="Hearthstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wG0-EP-wIZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-GK-CRR">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -148,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Hxm-HN-VUa" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="top" id="1ga-Mk-zov"/>
                                     <constraint firstItem="Hxm-HN-VUa" firstAttribute="leading" secondItem="53e-D4-CJZ" secondAttribute="leading" id="2Td-Rz-3BZ"/>
@@ -193,11 +193,54 @@
             </objects>
             <point key="canvasLocation" x="1726.0869565217392" y="117.85714285714285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="RIR-Nb-0gg">
+            <objects>
+                <viewController id="KrO-z7-Yfn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KW7-F0-dfU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start background" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-45-3Cm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPH-MB-9G6">
+                                <rect key="frame" x="50" y="772" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HdE-K5-XMB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="press to PLAY">
+                                    <color key="titleColor" red="0.97528454610000004" green="0.6537327154" blue="0.0030456085739999999" alpha="0.59779379399999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xV2-MC-fsd" kind="show" id="REQ-8L-c2E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UaH-mD-X97"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ew-45-3Cm" firstAttribute="top" secondItem="KW7-F0-dfU" secondAttribute="top" id="7ut-JX-0e6"/>
+                            <constraint firstAttribute="bottom" secondItem="5ew-45-3Cm" secondAttribute="bottom" id="Bb7-B5-zjt"/>
+                            <constraint firstItem="uPH-MB-9G6" firstAttribute="leading" secondItem="UaH-mD-X97" secondAttribute="leading" constant="50" id="ISn-fx-IJb"/>
+                            <constraint firstItem="UaH-mD-X97" firstAttribute="trailing" secondItem="uPH-MB-9G6" secondAttribute="trailing" constant="50" id="ZQy-4e-Yzw"/>
+                            <constraint firstAttribute="trailing" secondItem="5ew-45-3Cm" secondAttribute="trailing" id="sTq-S6-nnA"/>
+                            <constraint firstItem="5ew-45-3Cm" firstAttribute="leading" secondItem="KW7-F0-dfU" secondAttribute="leading" id="t5B-BX-ozO"/>
+                            <constraint firstItem="UaH-mD-X97" firstAttribute="bottom" secondItem="uPH-MB-9G6" secondAttribute="bottom" constant="50" id="zpK-MZ-6mN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ur-zI-jL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2415" y="80"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="UNN-Nb-Zca">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xV2-MC-fsd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="xV2-MC-fsd" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="kGe-23-iQp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tnv-7T-kvd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -213,6 +256,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="start background" width="335" height="595.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

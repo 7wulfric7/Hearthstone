@@ -49,11 +49,15 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
 //        let set = info?.classes[indexPath.row]
         let type = names[indexPath.row]
         cell.lblClasses.text = type
-
+        cell.backgroundColor = .black
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.red
+        cell.selectedBackgroundView = backgroundView
         
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let name = names[indexPath.row]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as! ViewController

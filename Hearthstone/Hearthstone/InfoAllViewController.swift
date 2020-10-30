@@ -85,6 +85,10 @@ extension InfoAllViewController: UITableViewDataSource, UITableViewDelegate {
 //        let set = info?.classes[indexPath.row]
         let type = types[indexPath.row]
         cell.lblClasses.text = type
+        cell.backgroundColor = .black
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.red
+        cell.selectedBackgroundView = backgroundView
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -92,6 +96,7 @@ extension InfoAllViewController: UITableViewDataSource, UITableViewDelegate {
         let type = types[indexPath.row]
         let dataArray = sets.getArrayForKey(key: type)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         let controller = storyboard.instantiateViewController(withIdentifier: "CategoriesViewController") as! CategoriesViewController
         controller.names = dataArray
         controller.type = type

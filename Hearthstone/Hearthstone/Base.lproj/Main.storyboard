@@ -20,6 +20,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3w4-3l-jb3">
                                 <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tCh-a6-Dr9"/>
@@ -52,6 +53,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-GK-CRR">
                                 <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nhm-lG-2tg"/>
@@ -83,6 +85,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-Ks-0vl">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Set Is Empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jQ-8J-nW6">
                                 <rect key="frame" x="125.5" y="436" width="163" height="24"/>
@@ -120,22 +123,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-3U-RDz">
-                                <rect key="frame" x="20" y="591" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inApp background" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-D4-5As">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-di-3YT">
+                                <rect key="frame" x="20" y="540" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-di-3YT">
-                                <rect key="frame" x="20" y="540" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-3U-RDz">
+                                <rect key="frame" x="20" y="595.5" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-8Q-VcI">
-                                <rect key="frame" x="20" y="642" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="651" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53e-D4-CJZ" userLabel="Holder View">
@@ -166,10 +172,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mLs-8Q-VcI" firstAttribute="top" secondItem="ETg-3U-RDz" secondAttribute="bottom" constant="30" id="Aw7-7D-E1E"/>
+                            <constraint firstItem="WA1-D4-5As" firstAttribute="top" secondItem="Pyt-Yj-d20" secondAttribute="top" id="Gd4-54-ohK"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="53e-D4-CJZ" secondAttribute="trailing" constant="20" id="IF8-NA-xbu"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="ETg-3U-RDz" secondAttribute="trailing" constant="20" id="L5d-rL-Svb"/>
                             <constraint firstItem="53e-D4-CJZ" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="OI0-ub-xJv"/>
                             <constraint firstItem="Vtv-di-3YT" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="bottom" constant="30" id="X1P-Pz-nfw"/>
+                            <constraint firstAttribute="bottom" secondItem="WA1-D4-5As" secondAttribute="bottom" id="aq9-4B-639"/>
+                            <constraint firstItem="WA1-D4-5As" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" id="ekZ-x4-31G"/>
                             <constraint firstItem="ETg-3U-RDz" firstAttribute="top" secondItem="Vtv-di-3YT" secondAttribute="bottom" constant="30" id="fNC-u3-Knm"/>
                             <constraint firstItem="ETg-3U-RDz" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="iPP-xd-ub7"/>
                             <constraint firstItem="53e-D4-CJZ" firstAttribute="top" secondItem="v3G-dK-bAi" secondAttribute="top" constant="10" id="lnm-NC-P2o"/>
@@ -177,6 +186,7 @@
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="Vtv-di-3YT" secondAttribute="trailing" constant="20" id="p1Z-Bv-oJm"/>
                             <constraint firstItem="mLs-8Q-VcI" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="wCf-hi-2LU"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="mLs-8Q-VcI" secondAttribute="trailing" constant="20" id="wzo-1b-dJI"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="WA1-D4-5As" secondAttribute="trailing" id="z5l-Aj-mIU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pqo-rv-qv8"/>
@@ -256,6 +266,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="inApp background" width="540" height="960"/>
         <image name="start background" width="335" height="595.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

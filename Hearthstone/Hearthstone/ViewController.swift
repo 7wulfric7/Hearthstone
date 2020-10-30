@@ -57,9 +57,15 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cardsCell") as! CardsTableViewCell
         let card = cards[indexPath.row]
         cell.getInfoForCrads(cards: card)
+        cell.backgroundColor = .black
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.red
+        cell.selectedBackgroundView = backgroundView
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let displayedCard = cards[indexPath.row]
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "SingleCardViewController") as! SingleCardViewController

@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         setupTable()
         
         title = self.name
+        
         APIManager.shared.getCardList(name: name, type: type) { (cards, error) in
             if let cards = cards {
                 self.cards = cards

@@ -35,6 +35,9 @@ class CardsTableViewCell: UITableViewCell {
         self.lblCardSet.text = cards.cardSet
         self.lblType.text = cards.type
         self.lblPlayerClass.text = cards.playerClass
+        if avatar.image == nil {
+            self.avatar.kf.setImage(with: URL(string: STATIC_PIC))
+        }
         if let avatarName = cards.img {
             self.avatar.kf.setImage(with: URL(string: avatarName))
         }

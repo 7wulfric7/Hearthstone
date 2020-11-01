@@ -126,32 +126,49 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inApp background" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-D4-5As">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-di-3YT">
-                                <rect key="frame" x="20" y="540" width="374" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkS-Nm-siA">
+                                <rect key="frame" x="20" y="420" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-3" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-3U-RDz">
-                                <rect key="frame" x="20" y="595.5" width="374" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-di-3YT">
+                                <rect key="frame" x="20" y="450" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-3" height="-1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-8Q-VcI">
-                                <rect key="frame" x="20" y="651" width="374" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-3U-RDz">
+                                <rect key="frame" x="20" y="510" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-3" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPF-YT-z6K">
+                                <rect key="frame" x="20" y="540" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-3" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-8Q-VcI">
+                                <rect key="frame" x="20" y="570" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-3" height="-1"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53e-D4-CJZ" userLabel="Holder View">
-                                <rect key="frame" x="20" y="10" width="374" height="500"/>
+                                <rect key="frame" x="20" y="10" width="374" height="400"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Alm-Vh-494">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="400"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxm-HN-VUa">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="400"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,32 +177,48 @@
                                     <constraint firstItem="Hxm-HN-VUa" firstAttribute="leading" secondItem="53e-D4-CJZ" secondAttribute="leading" id="2Td-Rz-3BZ"/>
                                     <constraint firstAttribute="trailing" secondItem="Alm-Vh-494" secondAttribute="trailing" id="36a-aF-N4Q"/>
                                     <constraint firstAttribute="bottom" secondItem="Hxm-HN-VUa" secondAttribute="bottom" id="Q1w-yd-oxQ"/>
-                                    <constraint firstAttribute="height" constant="500" id="ZbT-IU-Vws"/>
+                                    <constraint firstAttribute="height" constant="400" id="ZbT-IU-Vws"/>
                                     <constraint firstAttribute="trailing" secondItem="Hxm-HN-VUa" secondAttribute="trailing" id="bKc-Z9-iJs"/>
                                     <constraint firstAttribute="bottom" secondItem="Alm-Vh-494" secondAttribute="bottom" id="iR3-vi-6lI"/>
                                     <constraint firstItem="Alm-Vh-494" firstAttribute="leading" secondItem="53e-D4-CJZ" secondAttribute="leading" id="ire-wJ-GWb"/>
                                     <constraint firstItem="Alm-Vh-494" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="top" id="q6a-Go-csV"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOt-3J-Hb4">
+                                <rect key="frame" x="20" y="480" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="25"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="-3" height="-1"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v3G-dK-bAi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mLs-8Q-VcI" firstAttribute="top" secondItem="ETg-3U-RDz" secondAttribute="bottom" constant="30" id="Aw7-7D-E1E"/>
+                            <constraint firstItem="mLs-8Q-VcI" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="0bf-Yo-oFe"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="hPF-YT-z6K" secondAttribute="trailing" constant="20" id="4Fd-fE-hqd"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="mLs-8Q-VcI" secondAttribute="trailing" constant="20" id="8Qa-hz-3JG"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="GOt-3J-Hb4" secondAttribute="trailing" constant="20" id="94F-yM-2AL"/>
+                            <constraint firstItem="Vtv-di-3YT" firstAttribute="top" secondItem="dkS-Nm-siA" secondAttribute="bottom" constant="30" id="9zh-1Q-otk"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="Vtv-di-3YT" secondAttribute="trailing" constant="20" id="Bop-bP-wh7"/>
+                            <constraint firstItem="hPF-YT-z6K" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="E6v-h9-Lae"/>
                             <constraint firstItem="WA1-D4-5As" firstAttribute="top" secondItem="Pyt-Yj-d20" secondAttribute="top" id="Gd4-54-ohK"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="53e-D4-CJZ" secondAttribute="trailing" constant="20" id="IF8-NA-xbu"/>
-                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="ETg-3U-RDz" secondAttribute="trailing" constant="20" id="L5d-rL-Svb"/>
                             <constraint firstItem="53e-D4-CJZ" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="OI0-ub-xJv"/>
-                            <constraint firstItem="Vtv-di-3YT" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="bottom" constant="30" id="X1P-Pz-nfw"/>
+                            <constraint firstItem="dkS-Nm-siA" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="QaG-nw-DGE"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="dkS-Nm-siA" secondAttribute="trailing" constant="20" id="ThX-uk-U1u"/>
+                            <constraint firstItem="Vtv-di-3YT" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="Uc8-bB-hxc"/>
+                            <constraint firstItem="dkS-Nm-siA" firstAttribute="top" secondItem="53e-D4-CJZ" secondAttribute="bottom" constant="10" id="VcU-Ki-9Yb"/>
+                            <constraint firstItem="GOt-3J-Hb4" firstAttribute="top" secondItem="Vtv-di-3YT" secondAttribute="bottom" constant="30" id="Wzc-o3-m4U"/>
+                            <constraint firstItem="ETg-3U-RDz" firstAttribute="top" secondItem="GOt-3J-Hb4" secondAttribute="bottom" constant="30" id="YHf-AP-we0"/>
                             <constraint firstAttribute="bottom" secondItem="WA1-D4-5As" secondAttribute="bottom" id="aq9-4B-639"/>
+                            <constraint firstItem="hPF-YT-z6K" firstAttribute="top" secondItem="ETg-3U-RDz" secondAttribute="bottom" constant="30" id="dsL-WD-tkk"/>
                             <constraint firstItem="WA1-D4-5As" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" id="ekZ-x4-31G"/>
-                            <constraint firstItem="ETg-3U-RDz" firstAttribute="top" secondItem="Vtv-di-3YT" secondAttribute="bottom" constant="30" id="fNC-u3-Knm"/>
-                            <constraint firstItem="ETg-3U-RDz" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="iPP-xd-ub7"/>
+                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="ETg-3U-RDz" secondAttribute="trailing" constant="20" id="gMv-6R-tz1"/>
+                            <constraint firstItem="GOt-3J-Hb4" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="j7y-1S-O4Z"/>
+                            <constraint firstItem="mLs-8Q-VcI" firstAttribute="top" secondItem="hPF-YT-z6K" secondAttribute="bottom" constant="30" id="lHm-E5-vog"/>
                             <constraint firstItem="53e-D4-CJZ" firstAttribute="top" secondItem="v3G-dK-bAi" secondAttribute="top" constant="10" id="lnm-NC-P2o"/>
-                            <constraint firstItem="Vtv-di-3YT" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="mHb-HK-hgh"/>
-                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="Vtv-di-3YT" secondAttribute="trailing" constant="20" id="p1Z-Bv-oJm"/>
-                            <constraint firstItem="mLs-8Q-VcI" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="wCf-hi-2LU"/>
-                            <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="mLs-8Q-VcI" secondAttribute="trailing" constant="20" id="wzo-1b-dJI"/>
+                            <constraint firstItem="ETg-3U-RDz" firstAttribute="leading" secondItem="v3G-dK-bAi" secondAttribute="leading" constant="20" id="mTE-EB-hYq"/>
                             <constraint firstItem="v3G-dK-bAi" firstAttribute="trailing" secondItem="WA1-D4-5As" secondAttribute="trailing" id="z5l-Aj-mIU"/>
                         </constraints>
                     </view>
@@ -194,9 +227,12 @@
                         <outlet property="gif" destination="Hxm-HN-VUa" id="kKq-zy-ytf"/>
                         <outlet property="holderView" destination="53e-D4-CJZ" id="pw9-ou-OHR"/>
                         <outlet property="image" destination="Alm-Vh-494" id="Jl9-Na-NXR"/>
-                        <outlet property="lblCardSet" destination="Vtv-di-3YT" id="H1r-9p-fo7"/>
-                        <outlet property="lblLocale" destination="mLs-8Q-VcI" id="nrf-OT-4KS"/>
-                        <outlet property="lblText" destination="ETg-3U-RDz" id="GFz-Ib-uXw"/>
+                        <outlet property="lblCardSet" destination="ETg-3U-RDz" id="odU-50-yYq"/>
+                        <outlet property="lblLocale" destination="mLs-8Q-VcI" id="wgw-tF-IGm"/>
+                        <outlet property="lblName" destination="dkS-Nm-siA" id="lu7-jO-BHD"/>
+                        <outlet property="lblPlayerClass" destination="Vtv-di-3YT" id="MV4-0g-elK"/>
+                        <outlet property="lblText" destination="hPF-YT-z6K" id="BAl-JV-4Zl"/>
+                        <outlet property="lblType" destination="GOt-3J-Hb4" id="NhN-Zd-o5O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlk-pW-HF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,6 +306,9 @@
         <image name="start background" width="335" height="595.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

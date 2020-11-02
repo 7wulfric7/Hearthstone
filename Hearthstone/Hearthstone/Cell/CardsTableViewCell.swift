@@ -42,4 +42,7 @@ class CardsTableViewCell: UITableViewCell {
             self.avatar.kf.setImage(with: URL(string: avatarName))
         }
     }
+    override func prepareForReuse() {
+    avatar.image = nil
+    }
 }

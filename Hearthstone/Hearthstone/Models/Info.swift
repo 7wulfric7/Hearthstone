@@ -16,7 +16,7 @@ struct Sets: Decodable {
     var factions: Array<String> = []
     var qualities: Array<String> = []
     var races: Array<String> = []
-    var locales: Array<String> = []
+    
     
     func getArrayForKey(key: String) -> [String] {
         switch key {
@@ -36,14 +36,8 @@ struct Sets: Decodable {
             return qualities
         case "races":
             return races
-        case "locales":
-            return locales
         default:
            return []
         }
     }
 }
-
-//struct Info: Decodable {
-//    var sets = [""]
-//}

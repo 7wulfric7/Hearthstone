@@ -27,28 +27,12 @@ var types = [String]()
                 self.parseData(json: json)
             }
         }
-//        APIManagerAll.shared.getInfoForAll { (sets, error) in
-//            if let sets = sets {
-//                self.info = sets
-//                self.infoAllTableView.reloadData()
-//
-//            }
-//                print("vrakja nesto")
-//            }
-//                 APIManagerAll.shared.getInfoForAll { (sets, error) in
-//                        if let info = sets {
-//                            self.sets = info
-//                            self.infoAllTableView.reloadData()
-//            
-//                        }
-//                            print("vrakja nesto")
-//                        }
-    
     }
   
     func parseData(json: [String: Any]) {
         types.append(contentsOf: json.keys)
         types.removeAll(where: {$0 == "patch"})
+        types.removeAll(where: {$0 == "locales"})
         let decoder = JSONDecoder()
         do {
             let data = try JSONSerialization.data(withJSONObject: json, options: .fragmentsAllowed)
